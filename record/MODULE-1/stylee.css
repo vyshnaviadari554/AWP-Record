@@ -1,0 +1,70 @@
+/* '*' is select all*/
+*{
+    border-style:solid;
+    border-width:thick ;
+}
+
+/* only for paragraphs*/
+p{
+    color: rgb(255, 153, 0);
+    align-items: center;
+}
+
+
+/* class selector ("." represents select class*/
+.xyz{
+    color: rgb(205, 25, 121);
+    text-transform: uppercase;
+}
+/* id selector ("#" represents id)*/
+#googleceo{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+/* common for h1,h2,h3,h4,p (anything that is mentioned )*/
+h1,h2,h3,h4,p{
+    border-style: dotted;
+    color: darkblue;
+    text-align: center;
+}
+/* Attribute selector */
+p[class="abc"]
+{
+    color: blueviolet;
+    text-transform: unset;
+}
+/* only for h3*/
+
+
+/* child selector */
+h4>a{
+    color: indianred;
+    text-transform: uppercase;
+}
+/* only for h4*/
+
+/*psudo selector*/
+a{
+    color: aqua;
+    border-style: solid;
+}
+/* clr changes when mouse is placed on the option*/
+a:hover{
+    color: blanchedalmond;
+    background-color: brown;
+}
+/* clr changes when option is selected*/
+a:active{
+    color: darkgreen;
+    background-color: darkorange;
+}
+/*clr changes when option is previously visited*/
+a:visited{
+    color: rgb(0, 0, 0);
+    background-color:rgb(51, 51, 255);
+}
+/* information placed after h2 tag*/
+h2::after{
+    content: "!!!";
+}
